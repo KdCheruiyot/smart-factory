@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="jobs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+ <!-- Sidebar -->
+      <button onclick="toggleSidebar()" class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+      <div class="sidebar-container">
+        <!-- Sidebar Toggle Button -->
+        
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <i class="fas fa-briefcase"></i> Smart Factory
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="jobs.html"><i class="fas fa-list"></i> Job Listings</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="wallet.html"><i class="fas fa-wallet"></i> Wallet</a></li>
+      <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    </ul>
+  </div>
+  
+
+      
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Listings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="wallet.html">Wallet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Available Jobs</h1>
+
+        <!-- Job Item 1 -->
+        <div class="job-item">
+            <h3>Data Annotation</h3>
+            <p>Assist in labeling data for AI models. Ideal for individuals with strong attention to detail.</p>
+            <a href="apply.html">Apply for this job</a>
+        </div>
+
+        <!-- Job Item 2 -->
+        <div class="job-item">
+            <h3>Data Entry</h3>
+            <p>Work from home and input data into systems. Great for people with fast typing skills.</p>
+            <a href="apply.html">Apply for this job</a>
+        </div>
+
+        <!-- Job Item 3 -->
+        <div class="job-item">
+            <h3>Academic Writing</h3>
+            <p>Write essays, research papers, and more. Perfect for those with strong writing skills.</p>
+            <a href="apply.html">Apply for this job</a>
+        </div>
+
+        <!-- Job Item 4 -->
+        <div class="job-item">
+            <h3>Data Transcription</h3>
+            <p>Convert audio and video files into text. Ideal for people with good listening and typing skills.</p>
+            <a href="apply.html">Apply for this job</a>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Online Job Advertisements</p>
+    </footer>
+    <script src="jobs.js"></script>
+    <script>
+        // Redirect to login if not authenticated
+        if (sessionStorage.getItem('loggedIn') !== 'true') {
+          window.location.href = 'login.html';
+        }
+    </script>
+
+</body>
+</html>

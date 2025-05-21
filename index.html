@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Advertisements</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+   
+    <div class="company-brand">
+        <h2>Smart Factory</h2>
+      </div>
+      <!-- Sidebar -->
+      <button onclick="toggleSidebar()" class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+    
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <i class="fas fa-briefcase"></i> Smart Factory
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="jobs.html"><i class="fas fa-list"></i> Job Listings</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="wallet.html"><i class="fas fa-wallet"></i> Wallet</a></li>
+      <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    </ul>
+  </div>
+ 
+  
+  
+
+     
+  
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Listings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="wallet.html">Wallet</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <h1>Welcome to Online Job Opportunities</h1>
+            <br>
+            <br>
+            <p>Your gateway to flexible and rewarding online jobs.</p>
+            <br>
+            <br>
+            <p>Explore various job categories and earn from home</p>
+        </section>
+
+        <section class="featured-jobs">
+            <h2>Featured Job Categories</h2>
+            <div class="job-category">
+                <h3>Data Annotation</h3>
+                <p>Apply your data labeling skills to help train AI models.</p>
+                <a href="jobs.html">Explore Data Annotation Jobs</a>
+            </div>
+            <div class="job-category">
+                <h3>Data Entry</h3>
+                <p>Enter data into various systems and platforms.</p>
+                <a href="jobs.html">Explore Data Entry Jobs</a>
+            </div>
+            <div class="job-category">
+                <h3>Academic Writing</h3>
+                <p>Write research papers, essays, and more for clients.</p>
+                <a href="jobs.html">Explore Academic Writing Jobs</a>
+            </div>
+            <div class="job-category">
+                <h3>Data Transcription</h3>
+                <p>Convert audio and video recordings into text.</p>
+                <a href="jobs.html">Explore Data Transcription Jobs</a>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    
+    <button onclick="goBack()" class="back-btn">Back</button>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Online Job Advertisements</p>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        // Redirect to login if not authenticated
+        if (sessionStorage.getItem('loggedIn') !== 'true') {
+          window.location.href = 'login.html';
+        }
+      </script>
+
+</body>
+</html>

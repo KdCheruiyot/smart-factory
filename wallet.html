@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet Page</title>
+  <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+  <div class="wallet-container">
+    <div class="back-btn-container">
+        <a href="index.html" class="back-btn">Back to Home</a>
+      </div>
+      <div class="company-brand">
+        <h2>Smart Factory</h2>
+      </div>
+      
+      
+    <div class="wallet-header">
+      <h1>Your Wallet</h1>
+      <p>Manage your balance and transactions here.</p>
+    </div>
+    
+    <div class="wallet-card">
+      <h2>Account Balance</h2>
+      <div class="balance-amount">
+        <p>KSH <span id="balance">1000.00</span></p> 
+      </div>
+      <button id="add-funds" disabled title="Only admin can add funds">Add Funds</button>
+
+     
+      <br>
+      <button id="view-transactions">View Transactions</button>
+      <br>
+      <button id="withdraw-funds">Withdraw Funds</button>
+    </div>
+
+    <div class="transactions">
+      <h2>Recent Transactions</h2>
+      <div class="transaction">
+        <p>Data Entry Task Completed</p>
+        <p class="transaction-amount">+KSH 1000.00</p> 
+      </div>
+      <div class="transaction">
+        <p>Online Academic Writing</p>
+        <p class="transaction-amount">-KSH 500.00</p>
+      </div>
+      <div class="transaction">
+        <p>Data Annotation Task</p>
+        <p class="transaction-amount">+KSH 2000.00</p> 
+      </div>
+
+      <div class="withdrawal">
+        <p>Withdrawal Request</p>
+        <p class="transaction-amount">-KSH 5000.00</p> 
+      </div>
+      <div class="transaction">
+        <p>Data Transcription Payment</p>
+        <p class="transaction-amount">-KSH 1500.00</p> 
+      </div>
+    </div>
+  </div>
+
+  <script src="wallet.js"></script>
+</body>
+</html>

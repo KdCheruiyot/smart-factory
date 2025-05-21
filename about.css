@@ -1,0 +1,205 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background-color: #222;
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  /* Back and Forward Buttons */
+  .back-btn,
+  .forward-btn {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-btn:hover,
+  .forward-btn:hover {
+    background-color: #0097a7;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+  }
+  .company-brand {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .company-brand i {
+    font-size: 20px;
+  }
+  
+  .company-brand:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    cursor: pointer;
+  }
+  /* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+    color: #fff;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .sidebar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+  
+  .sidebar-brand i {
+    margin-right: 10px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-menu li {
+    border-bottom: 1px solid #3c4a5a;
+  }
+  
+  .sidebar-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .sidebar-menu li a:hover {
+    background: #1abc9c;
+  }
+  
+  /* Push page content right */
+  main, header, footer {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  /* Responsive Sidebar */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    main, header, footer {
+      margin-left: 0;
+    }
+  }
+  .sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 230px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar-toggle {
+      left: 10px;
+    }
+  }
+  
+  
+  
